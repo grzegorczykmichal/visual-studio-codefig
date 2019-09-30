@@ -1,13 +1,14 @@
 {
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.detectIndentation": true,
   "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
+  "editor.rulers": [80],
   "editor.tokenColorCustomizations": {
     "[Ayu Mirage]": {},
     "[Atom One Dark]": {}
@@ -26,16 +27,14 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/bin": true,
+    // "**/bin": true,
     "**/obj": true
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.rendererType": "dom",
-  "latex-workshop.view.pdf.viewer": "tab",
   "workbench.activityBar.visible": true,
   "workbench.editor.enablePreview": false,
   "workbench.useExperimentalGridLayout": true,
-  "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
     "[Ayu Mirage]": {
       "editorWhitespace.foreground": "#323b4d",
@@ -49,24 +48,21 @@
     "[Atom One Dark]": {
       // ACTIVITY BAR
       "activityBar.background": "#21252B",
-
       // EDITOR
-
       "editor.lineHighlightBackground": "#000000dd",
-      "editorBracketMatch.background": "#0F0F0Fdd",
-      "editorBracketMatch.border": "#0000",
+      "editorBracketMatch.background": "#ffdd0044",
+      "editorBracketMatch.border": "#ffdd0000",
       "editorCursor.background": "#ffdd00",
-      "editor.selectionBackground": "#111",
-      "editor.selectionHighlightBackground": "#50576152",
+      "editor.selectionBackground": "#f200f255",
+      "editor.selectionForeground": "#000",
+      "editorRuler.foreground": "#21252B",
+      // "editor.selectionHighlightBackground": "#50576152",
       "editorIndentGuide.activeBackground": "#ffffff70",
       "editorIndentGuide.background": "#282C34",
-
       //TABS
       "tab.border": "#21252B",
       "tab.inactiveForeground": "#ffffff4b"
-
       //CURSOR
-
       // GIT
       // "gitDecoration.addedResourceForeground": "#00Ffa",
       // "gitDecoration.untrackedResourceForeground": "#faf",
@@ -75,12 +71,21 @@
     }
   },
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "material-icon-theme",
-  "window.menuBarVisibility": "visible",
+  "window.menuBarVisibility": "toggle",
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}",
   "window.zoomLevel": 0,
-  "vsicons.dontShowNewVersionMessage": true,
   "zenMode.centerLayout": false,
   "editor.minimap.renderCharacters": false,
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.formatOnSave": true,
+  "javascript.implicitProjectConfig.experimentalDecorators": true
 }
